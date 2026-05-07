@@ -1,0 +1,40 @@
+<div class="container">
+  <h2>Create your account</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <input type="text" placeholder="First name" formControlName="firstName" />
+    @if(f['firstName'].touched && f['firstName'].invalid){
+      <p class="error">First name must be at least 3 characters</p>
+    }
+
+    <input type="text" placeholder="Last name" formControlName="lastName" />
+    @if(f['lastName'].touched && f['lastName'].invalid){
+      <p class="error">Last name is required</p>
+    }
+
+    <input type="email" placeholder="Email" formControlName="email" />
+    @if(f['email'].touched && f['email'].errors?.['required']){
+      <p class="error">Email is required</p>
+    }
+    @if(f['email'].touched && f['email'].errors?.['email']){
+      <p class="error">Enter a valid email</p>
+    }
+
+    <input type="password" placeholder="Password" formControlName="password" />
+    @if(f['password'].touched && f['password'].invalid){
+      <p class="error">Minimum 6 characters</p>
+    }
+
+    <input type="password" placeholder="Confirm password" formControlName="confirmPassword" />
+    @if(form.errors?.['mismatch'] && f['confirmPassword'].touched){
+      <p class="error">Passwords do not match</p>
+    }
+
+     <div>
+        <button type="submit">Create account</button>
+     </div>
+    
+
+  </form>
+</div>

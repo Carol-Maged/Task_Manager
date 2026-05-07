@@ -1,0 +1,33 @@
+<ul class="nav nav-tabs container">
+
+  <li class="nav-item">
+    <a 
+      class="nav-link"
+      [class.active]="selectedTab === 'AllTask'"
+      (click)="selectTab('AllTask')"
+    >
+      All Tasks
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a 
+      class="nav-link"
+      [class.active]="selectedTab === 'InProgress'"
+      (click)="selectTab('InProgress')"
+    >
+      In Progress
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a 
+      class="nav-link"
+      [class.active]="selectedTab === 'Done'"
+      (click)="selectTab('Done')"
+    >
+      Done
+    </a>
+  </li>
+
+</ul>

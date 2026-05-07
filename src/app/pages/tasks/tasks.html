@@ -1,0 +1,16 @@
+
+<div class="container mt-4">
+
+  <h3 class="mb-3">Tasks</h3>
+
+  <app-task-list
+    [tasks]="tasks"
+
+    (deleteTask)="onDelete($event)"
+    (doneTask)="onDone($event)"
+    (updateTask)="onUpdate($event)"
+
+  >
+  </app-task-list>
+
+</div>

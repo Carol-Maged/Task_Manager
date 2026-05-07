@@ -1,0 +1,43 @@
+<div class="container">
+  <h2>Login</h2>
+
+  <form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)">
+
+    <input
+      type="email"
+      placeholder="Email"
+      name="email"
+      [(ngModel)]="email"
+      #emailRef="ngModel"
+      required
+      email
+    />
+
+    @if (emailRef.touched && emailRef.invalid) {
+      <p class="error">Enter a valid email</p>
+    }
+
+    <input
+      type="password"
+      placeholder="Password"
+      name="password"
+      [(ngModel)]="password"
+      #passwordRef="ngModel"
+      required
+    />
+
+    @if (passwordRef.touched && passwordRef.invalid) {
+      <p class="error">Password is required</p>
+    }
+
+    <div>
+      <button type="submit">Login</button>
+    </div>
+
+  </form>
+
+  <p>
+    Don’t have an account?
+    <a routerLink="/signup">Sign up</a>
+  </p>
+</div>

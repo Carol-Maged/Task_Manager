@@ -1,0 +1,17 @@
+.container {
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;              
+  padding: 0px;
+  background: #ffffff;
+}
+
+.form-header {
+  width: 100%;
+  background: #0d6efd;
+  color: white;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+}

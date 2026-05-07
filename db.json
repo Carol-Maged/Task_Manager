@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "firstName": "carol",
+      "lastName": "maged",
+      "email": "carol@gmail.com",
+      "password": "123456",
+      "id": "ZvOectsrqR8"
+    },
+    {
+      "firstName": "aaaa",
+      "lastName": "bbbb",
+      "email": "aaaa@gmail.com",
+      "password": "123654",
+      "id": "K3BBbZyX3cY"
+    },
+    {
+      "firstName": "amir",
+      "lastName": "amin",
+      "email": "amir@gmail.com",
+      "password": "147963",
+      "id": "buKJND7EAeU"
+    },
+    {
+      "firstName": "dany",
+      "lastName": "dany",
+      "email": "dany@gmail.com",
+      "password": "123654",
+      "id": "P_fjnenybxs"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "s-zkkVg5zXY",
+      "title": "ef core updated",
+      "description": "dfhgj",
+      "date": "2026-05-27T00:00:00.000Z",
+      "priority": "High",
+      "status": "Done"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
